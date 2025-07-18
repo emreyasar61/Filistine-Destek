@@ -1,771 +1,185 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filistin Destek Platformu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
     }
+
     header {
-      background-color: #bf1e2e;
-      color: #fff;
-      padding: 1em;
+      background-color: #006400;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
     .container {
-      padding: 2em;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 20px;
     }
+
     section {
-      margin-bottom: 2em;
-    }
-    h2 {
-      color: #bf1e2e;
-    }
-    .box {
-      background: #fff;
-      padding: 1em;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      border-left: 4px solid #bf1e2e;
-    }
-    .image {
-      text-align: center;
-      margin: 1em 0;
-    }
-    .image img {
-      max-width: 100%;
-      border: 3px solid #bf1e2e;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1em;
-      }
-      h1 {
-        font-size: 1.5em;
-      }
-      h2 {
-        font-size: 1.2em;
-      }
-    }
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #bf1e2e;
-      color: white;
-      border: none;
-      padding: 0.5em 1em;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.2em;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Filistin İçin Sessiz Kalma</h1>
-    <p>Boykot et. Bilgilendir. Paylaş. Destek Ol.</p>
-  </header>
-
-  <div class="container">
-    <section>
-      <h2>1. Boykot Edilecek Markalar</h2>
-      <div class="box">
-        <ul>
-          <li>HP</li>
-          <li>Intel</li>
-          <li>Puma</li>
-          <li>SodaStream</li>
-          <li>Jaffa</li>
-          <li>Carmel</li>
-          <li>Ahava</li>
-          <li>Sabra</li>
-          <li>Caterpillar</li>
-          <li>AXA</li>
-          <li>Airbnb</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>2. Filistin Gerçekleri</h2>
-      <div class="box">
-        <p>1948'de İsrail'in kuruluşuyla başlayan süreçte yüz binlerce Filistinli sürgün edildi. Gazze 2007'den bu yana abluka altında. Binlerce sivil hayatını kaybetti.</p>
-        <div class="image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Gaza_destruction_2021.jpg/800px-Gaza_destruction_2021.jpg" alt="2021 yılında Gazze'de İsrail saldırıları sonrası oluşan yıkım">
-          <p><em>Gazze'deki yıkım (2021)</em></p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>3. Sosyal Medya İçerikleri</h2>
-      <div class="box">
-        <p><strong>#FreePalestine</strong> – Özgürlük insan hakkıdır.</p>
-        <p><strong>#GazaUnderAttack</strong> – Gazze bombalanıyor, dünya susmamalı.</p>
-        <p><strong>#BoycottIsrael</strong> – Alışverişin bir vicdanı olsun.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>4. Destek İçin Ne Yapabilirsin?</h2>
-      <div class="box">
-        <ul>
-          <li>İsrail ürünlerini boykot et</li>
-          <li>Sosyal medyada bilgi yay</li>
-          <li>Yardım kuruluşlarına destek ol</li>
-          <li>Mektup, dilekçe gönder</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>5. Bağış Yap</h2>
-      <div class="box" style="text-align: center;">
-        <p>Filistin'deki insani yardımlara katkıda bulunmak ister misin?</p>
-        <a href="https://www.afad.gov.tr/filistin-yardim" target="_blank" style="background-color: #bf1e2e; color: #fff; padding: 0.7em 1.5em; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Bağış Yap</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>6. Bizimle İletişime Geç</h2>
-      <div class="box">
-        <form action="mailto:destek@filistinplatformu.org" method="post" enctype="text/plain">
-          <label for="name">Adınız:</label><br>
-          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5em;"><br><br>
-
-          <label for="message">Mesajınız:</label><br>
-          <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.5em;"></textarea><br><br>
-
-          <button type="submit" style="background-color: #bf1e2e; color: white; padding: 0.5em 1.5em; border: none; border-radius: 4px;">Gönder</button>
-        </form>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 Filistin Destek Platformu | Sessiz Kalma
-  </footer>
-
-  <button id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-</body>
-</html>
-<section>
-  <h2>7. Boykot Kampanyası Sayfası</h2>
-  <div class="box">
-    <p>Hazırladığımız kampanya sayfasını ziyaret ederek daha fazla bilgi alabilirsiniz:</p>
-    <a href="boykot.html" style="color: #bf1e2e; font-weight: bold;">Boykot Sayfasını Görüntüle</a>
-  </div>
-</section>
-
-<section>
-  <h2>8. Boykot Görseli</h2>
-  <div class="box image">
-    <img src="boykot-kampanya.jpg" alt="Boykot kampanyası görseli">
-  </div>
-</section>
-<h3>1. Boykot Edilecek Markalar ve Nedenleri</h3>
-<ul>
-  <li><b>HP:</b> İsrail ordusuna bilgisayar sistemleri ve dijital altyapı desteği sağlıyor.</li>
-  <li><b>Intel:</b> İsrail'de büyük AR-GE merkezleri bulunuyor, askeri projelere yatırım yapıyor.</li>
-  <li><b>Puma:</b> İsrail futbol federasyonuna sponsor olarak yerleşim yerlerini destekliyor.</li>
-  <li><b>SodaStream:</b> Uzun süre Batı Şeria’da faaliyet gösterdi, işgal bölgelerini normalleştirdi.</li>
-  <li><b>Jaffa:</b> İsrail markası, Filistin ürünlerinin yerini aldı.</li>
-  <li><b>Carmel:</b> İsrail tarım ürünlerini ihraç ediyor; işgal altındaki topraklardan gelen ürünler var.</li>
-  <li><b>Ahava:</b> Ölü Deniz’deki işgal altındaki bölgelerden kaynak kullanıyor.</li>
-  <li><b>Sabra:</b> İsrail ordusuna destek veren Strauss Group ile bağlantılı.</li>
-  <li><b>Caterpillar:</b> Filistinlilerin evlerinin yıkımında kullanılan iş makineleriyle biliniyor.</li>
-  <li><b>AXA:</b> İsrail yerleşimlerini destekleyen şirketlere yatırım yapıyor.</li>
-  <li><b>Airbnb:</b> İşgal altındaki Batı Şeria’daki yerleşim yerlerinde ev kiralamaya izin veriyor.</li>
-</ul><h3>2. Sıkça Sorulanlar</h3>
-<ul>
-  <li><b>Boykot neden önemli?</b> Tüketici gücüyle baskı kurmak, insan hakları ihlallerine karşı etkili bir sivil direniş yöntemidir.</li>
-  <li><b>Boykot etkili mi?</b> Evet. Daha önce apartheid Güney Afrika’da da benzer şekilde etkili olmuştu.</li>
-  <li><b>Bu markalardan uzak durmak dışında ne yapabilirim?</b> Bilgi yay, görseller paylaş, dilekçe gönder, organizasyonlara katıl.</li>
-</ul><h3>5. Alternatif Ürünler</h3>
-<ul>
-  <li><b>HP yerine:</b> Lenovo, Acer</li>
-  <li><b>Intel yerine:</b> AMD</li>
-  <li><b>Puma yerine:</b> Nike (takibe devam), Skechers</li>
-  <li><b>SodaStream yerine:</b> Ev tipi manuel soda makineleri (markasız)</li>
-  <li><b>AXA yerine:</b> Anadolu Sigorta, HDI Sigorta</li>
-</ul><h3>6. Güncel Duyurular</h3>
-<ul>
-  <li><b>22 Temmuz:</b> İstanbul’da boykot yürüyüşü</li>
-  <li><b>Haftalık eylem:</b> Sosyal medya paylaşımı saat 21:00’de</li>
-</ul><h3>7. İzlenmesi Gereken Videolar</h3>
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=XAFylzFqA8U" target="_blank">5 Broken Cameras (Belgesel)</a></li>
-  <li><a href="https://www.youtube.com/watch?v=pENd1cbEZvs" target="_blank">The Present (Kısa Film)</a></li>
-  <li><a href="https://www.youtube.com/watch?v=eDJSVPAx8xc" target="_blank">Occupation 101</a></li>
-</ul><h3>8. Filistin Kronolojisi</h3>
-<ul>
-  <li><b>1948:</b> Nakba – 700.000 Filistinli sürüldü</li>
-  <li><b>1967:</b> İsrail Batı Şeria ve Gazze'yi işgal etti</li>
-  <li><b>1987:</b> 1. İntifada başladı</li>
-  <li><b>2006:</b> Gazze ambargosu</li>
-  <li><b>2023-2025:</b> Yoğun saldırılar, binlerce sivil kayıp</li>
-</ul>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filistin İçin Sessiz Kalma</title>
-  <style>
-    body { font-family: sans-serif; background-color: #f9f9f9; margin: 0; padding: 0; }
-    header { background-color: #b40000; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 800px; margin: auto; background-color: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1, h2, h3 { color: #b40000; }
-    ul { padding-left: 20px; }
-    pre { background: #eee; padding: 10px; border-radius: 8px; overflow-x: auto; }
-    a { color: #b40000; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Filistin İçin Sessiz Kalma</h1>
-    <p>Boykot et. Bilgilendir. Paylaş. Destek Ol.</p>
-  </header>
-
-  <section>
-    <h2>1. Boykot Edilecek Markalar ve Nedenleri</h2>
-    <ul>
-      <li><b>HP:</b> İsrail ordusuna bilgisayar sistemleri sağlıyor.</li>
-      <li><b>Intel:</b> İsrail'de AR-GE merkezleri var.</li>
-      <li><b>Puma:</b> İşgal altındaki yerleşimleri destekliyor.</li>
-      <li><b>SodaStream:</b> Batı Şeria'da faaliyet gösterdi.</li>
-      <li><b>Jaffa:</b> İsrail ürünü, Filistin ürünlerini bastırıyor.</li>
-      <li><b>Carmel:</b> İşgal altındaki topraklardan ürün temin ediyor.</li>
-      <li><b>Ahava:</b> Ölü Deniz kaynaklarını kullanıyor.</li>
-      <li><b>Sabra:</b> Strauss Group aracılığıyla İsrail ordusunu destekliyor.</li>
-      <li><b>Caterpillar:</b> Filistinlilerin evlerini yıkan iş makineleriyle biliniyor.</li>
-      <li><b>AXA:</b> İsrail yerleşimlerine yatırım yapıyor.</li>
-      <li><b>Airbnb:</b> İşgal altındaki bölgelerde ev ilanlarını barındırıyor.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>2. Sıkça Sorulan Sorular</h2>
-    <ul>
-      <li><b>Boykot neden önemli?</b> Tüketici olarak gücümüzü insan hakları için kullanabiliriz.</li>
-      <li><b>Boykot etkili mi?</b> Geçmişte örnekleri var; Güney Afrika'da apartheid bu şekilde sona erdirildi.</li>
-      <li><b>Başka ne yapabilirim?</b> Paylaş, yaz, katıl, üret.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>3. Sosyal Medya Paylaşım Mesajı</h2>
-    <pre>
-#BoykotEt
-İsrail’in zulmüne karşı sessiz kalma!
-Tüketim gücünü Filistin için kullan. Bilgilendir, paylaş, harekete geç.
-    </pre>
-  </section>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Filistin İçin Sessiz Kalma</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #b40000;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
-    }
-    section {
-      background-color: #fff;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2, h3 {
-      color: #b40000;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #b40000;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .social-icons {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      color: #b40000;
-      font-size: 24px;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #b40000;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    .button:hover {
-      background-color: #8e0000;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Filistin İçin Sessiz Kalma</h1>
-    <p>Boykot Et. Bilgilendir. Paylaş. Destek Ol.</p>
-  </header>
-
-  <section>
-    <h2>1. Boykot Edilecek Markalar ve Nedenleri</h2>
-    <ul>
-      <li><b>HP:</b> İsrail ordusuna bilgisayar sistemleri sağlıyor.</li>
-      <li><b>Intel:</b> İsrail'de AR-GE merkezleri var.</li>
-      <li><b>Puma:</b> İşgal altındaki yerleşimleri destekliyor.</li>
-      <li><b>SodaStream:</b> Batı Şeria'da faaliyet gösterdi.</li>
-      <li><b>Jaffa:</b> İsrail ürünü, Filistin ürünlerini bastırıyor.</li>
-      <li><b>Carmel:</b> İşgal altındaki topraklardan ürün temin ediyor.</li>
-      <li><b>Ahava:</b> Ölü Deniz kaynaklarını kullanıyor.</li>
-      <li><b>Sabra:</b> Strauss Group aracılığıyla İsrail ordusunu destekliyor.</li>
-      <li><b>Caterpillar:</b> Filistinlilerin evlerini yıkan iş makineleriyle biliniyor.</li>
-      <li><b>AXA:</b> İsrail yerleşimlerine yatırım yapıyor.</li>
-      <li><b>Airbnb:</b> İşgal altındaki bölgelerde ev ilanlarını barındırıyor.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>2. Alternatif Ürünler</h2>
-    <ul>
-      <li><b>Fairphone:</b> Adil üretim yapan telefon markası</li>
-      <li><b>Beko:</b> HP yerine kullanılabilir</li>
-      <li><b>Temiz gıda kooperatifleri:</b> Yerli ve doğrudan üretici desteği</li>
-      <li><b>Boğaziçi Çay:</b> Lipton yerine</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>3. Sıkça Sorulan Sorular</h2>
-    <ul>
-      <li><b>Boykot neden önemli?</b> Tüketici olarak gücümüzü insan hakları için kullanabiliriz.</li>
-      <li><b>Boykot etkili mi?</b> Güney Afrika’daki apartheid rejimi bu şekilde sona erdi.</li>
-      <li><b>Başka ne yapabilirim?</b> Paylaş, üret, katıl, destek ol.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>4. Sosyal Medya Paylaşım Mesajı</h2>
-    <pre>
-#BoykotEt
-İsrail’in zulmüne karşı sessiz kalma!
-Tüketim gücünü Filistin için kullan. Bilgilendir, paylaş, destek ol!
-    </pre>
-    <a class="button" href="https://twitter.com/intent/tweet?text=%23BoykotEt%20%7C%20İsrail%27in%20zulmüne%20sessiz%20kalma%21%20Tüketim%20gücünü%20Filistin%20için%20kullan.">Twitter’da Paylaş</a>
-  </section>
-
-  <section>
-    <h2>5. Dilekçe ve PDF Materyalleri</h2>
-    <p>Dilekçe ve bilgilendirici materyalleri buradan indirebilirsiniz:</p>
-    <a class="button" href="dosyalar/dilekce.pdf" download>Dilekçeyi İndir (PDF)</a>
-    <br/>
-    <a class="button" href="dosyalar/boykot_kitapcigi.pdf" download>Boykot Kitapçığı (PDF)</a>
-  </section>
-
-  <section>
-    <h2>6. Bilgilendirici Video</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/aAE8u2rE4OA" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section class="social-icons">
-    <h3>Bizi Sosyal Medyada Takip Et</h3>
-    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-  </section>
-
-  <footer style="text-align:center; padding:20px; font-size:14px;">
-    © 2025 SessizKalma | Filistin İçin Dayanışma Platformu
-  </footer>
-</body>
-</html>
-<h2>🤲 Destek Olmak İster misin?</h2>
-<a href="https://www.filistinadestek.org/bagis" target="_blank" style="background:#e74c3c; color:white; padding:10px 20px; border-radius:6px; text-decoration:none;">
-  ❤️ Filistin’e Bağış Yap
-</a><h2>💬 Canlı Destek ve Dayanışma</h2>
-<p>Destek gruplarına katıl, merak ettiklerini sor:</p>
-<a href="https://wa.me/905XXXXXXXXX" target="_blank" style="background:#25d366; color:white; padding:10px 20px; border-radius:6px; text-decoration:none; display:inline-block;">
-  📱 WhatsApp Grubuna Katıl
-</a><h2>🕊️ Filistin İçin Dua Et</h2>
-<div style="background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); line-height:1.6;">
-  <p><strong>Allah’ım,</strong><br>
-  Mazlum Filistin halkına sabır, güç ve zafer nasip et. Çocukları, yaşlıları ve masumları koru. Kalplerimize merhamet, elimizden geleni yapma azmi ver. Sessiz kalmamayı, zulme karşı durmayı bize nasip et.</p>
-  <p><em>“Zulme rıza zulümdür.”</em></p>
-</div><h2>İzle ve Paylaş</h2>
-<iframe width="100%" height="215" src="https://www.youtube.com/embed/HnZSaKYmP2s" frameborder="0" allowfullscreen></iframe>
-<p><strong>Gaza Fights For Freedom</strong><br>Gazze'deki direnişi anlatan çarpıcı belgesel</p><h2>Bilgilendirici Dosyalar</h2>
-<a href="dosyalar/boykot-rehberi.pdf" download style="display:inline-block; padding:10px 15px; background:#c0392b; color:#fff; border-radius:6px; text-decoration:none;">
-  📄 Boykot Rehberi PDF İndir
-</a><h2>Paylaş</h2>
-<div style="margin: 15px 0;">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://sesizkalmaturkiye.github.io" target="_blank" style="margin-right: 10px;">
-    <i class="fab fa-facebook" style="color:#3b5998;"></i> Facebook
-  </a>
-  <a href="https://twitter.com/intent/tweet?url=https://sesizkalmaturkiye.github.io&text=Boykot Et, Sessiz Kalma!" target="_blank">
-    <i class="fab fa-twitter" style="color:#1da1f2;"></i> Twitter
-  </a>
-</div><h2>Alternatif Ürünler</h2>
-<table style="width:100%; border-collapse:collapse; margin-top:15px;">
-  <tr style="background-color:#f0f0f0;">
-    <th style="padding:10px;">Boykot Markası</th>
-    <th style="padding:10px;">Alternatif</th>
-  </tr>
-  <tr>
-    <td style="padding:10px; text-align:center;">
-      <img src="https://logo.clearbit.com/puma.com" alt="Puma" width="60"/><br>Puma
-    </td>
-    <td style="padding:10px; text-align:center;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Hummel_Logo.png" alt="Hummel" width="60"/><br>Hummel
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:10px; text-align:center;">
-      <img src="https://logo.clearbit.com/hp.com" width="60"/><br>HP
-    </td>
-    <td style="padding:10px; text-align:center;">
-      <img src="https://logo.clearbit.com/lenovo.com" width="60"/><br>Lenovo
-    </td>
-  </tr>
-</table><style>
-  .brand-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    margin: 20px 0;
-  }
-  .brand-card {
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 10px;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .brand-card img {
-    max-width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-</style>
-
-<h2>Boykot Edilecek Markalar</h2>
-<div class="brand-grid">
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/hp.com" alt="HP" />
-    <p>HP</p>
-  </div>
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/intel.com" alt="Intel" />
-    <p>Intel</p>
-  </div>
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/puma.com" alt="Puma" />
-    <p>Puma</p>
-  </div>
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/sodastream.com" alt="SodaStream" />
-    <p>SodaStream</p>
-  </div>
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb" />
-    <p>Airbnb</p>
-  </div>
-  <div class="brand-card">
-    <img src="https://logo.clearbit.com/axa.com" alt="AXA" />
-    <p>AXA</p>
-  </div>
-</div>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Boykot & Destek Görselleri</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 90%;
-      max-width: 400px;
-      margin: 20px 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .card img:hover {
-      transform: scale(1.05);
-    }
-
-    .card h2 {
-      margin-top: 15px;
-      font-size: 20px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 15px;
-      margin-top: 10px;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Boykot ve Destek Görselleri</h1>
-
-  <div class="card">
-    <a href="karadeniz-market.jpg" target="_blank">
-      <img src="karadeniz-market.jpg" alt="Karadeniz Market Logosu">
-      <h2>Karadeniz Market</h2>
-    </a>
-    <p>Bu market, İsrail’i desteklemeyen yerel alternatiflerden biri olabilir. Detayları öğrenmek için araştırma yapılmalıdır.</p>
-  </div>
-
-  <div class="card">
-    <a href="mr-logo.jpg" target="_blank">
-      <img src="mr-logo.jpg" alt="MR Sembolü">
-      <h2>MR Sembolü</h2>
-    </a>
-    <p>Bu sembol, yerli üretim/bağımsız girişim sembolü olarak kullanılabilir. Web sitende anlamını açıklayabilirsin.</p>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Boykot & Destek Görselleri</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 90%;
-      max-width: 400px;
-      margin: 20px 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .card img:hover {
-      transform: scale(1.05);
-    }
-
-    .card h2 {
-      margin-top: 15px;
-      font-size: 20px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 15px;
-      margin-top: 10px;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Boykot ve Destek Görselleri</h1>
-
-  <div class="card">
-    <a href="karadeniz-market.jpg" target="_blank">
-      <img src="karadeniz-market.jpg" alt="Karadeniz Market Logosu">
-      <h2>Karadeniz Market</h2>
-    </a>
-    <p>Bu market, İsrail’i desteklemeyen yerel alternatiflerden biri olabilir. Detayları öğrenmek için araştırma yapılmalıdır.</p>
-  </div>
-
-  <div class="card">
-    <a href="mr-logo.jpg" target="_blank">
-      <img src="mr-logo.jpg" alt="MR Sembolü">
-      <h2>MR Sembolü</h2>
-    </a>
-    <p>Bu sembol, yerli üretim/bağımsız girişim sembolü olarak kullanılabilir. Web sitende anlamını açıklayabilirsin.</p>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filistin'e Destek | Yerli Alternatifler</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    h1 {
-      color: #444;
-      text-align: center;
       margin-bottom: 40px;
     }
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 100%;
-      margin-bottom: 30px;
-      padding: 20px;
+    h2 {
+      color: #006400;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #006400;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .brand-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand-grid div {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      flex: 1 1 150px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease;
+    .downloads a, .video a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 15px;
+      background-color: #006400;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
     }
 
-    .card img:hover {
-      transform: scale(1.05);
+    .downloads a:hover {
+      background-color: #004d00;
     }
 
-    .card h2 {
-      color: #333;
-      margin: 10px 0;
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
     }
 
-    .card p {
-      color: #666;
-      font-size: 15px;
+    .social-icons a img {
+      width: 30px;
+      height: 30px;
     }
 
     footer {
-      margin-top: 50px;
-      color: #888;
-      font-size: 14px;
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .brand-grid {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>🇵🇸 Filistin'e Destek – Yerli Alternatifleri Tercih Et</h1>
+  <header>
+    <h1>Filistin'e Destek Platformu</h1>
+    <p>Bilinçlen, Paylaş, Destek Ol!</p>
+  </header>
 
-  <div class="card">
-    <img src="karadeniz-market.jpg" alt="Karadeniz Market Logosu">
-    <h2>Karadeniz Market</h2>
-    <p>Yerel zincir marketlerden biri. Milli üreticileri destekleyerek bağımsız ekonomiye katkı sağla.</p>
-  </div>
+  <div class="container">
+    
+    <section>
+      <h2>Boykot Edilen Markalar</h2>
+      <div class="brand-grid">
+        <div>Coca-Cola</div>
+        <div>McDonald's</div>
+        <div>Starbucks</div>
+        <div>Nestlé</div>
+        <div>Intel</div>
+        <div>Puma</div>
+      </div>
+    </section>
 
-  <div class="card">
-    <img src="mr-logo.jpg" alt="MR Alternatif Sembolü">
-    <h2>MR Sembolü</h2>
-    <p>Yerli üretim veya destek amacıyla kullanılabilecek sade ve anlamlı bir işaret.</p>
+    <section>
+      <h2>Alternatif Ürünler</h2>
+      <ul>
+        <li>Cola Turka - (Coca-Cola yerine)</li>
+        <li>Torku - (Nestlé yerine)</li>
+        <li>Yerel kahveciler - (Starbucks yerine)</li>
+        <li>Ev yemeği restoranları - (McDonald's yerine)</li>
+        <li>Vestel ürünleri - (Intel yerine bilgisayar alternatifleri)</li>
+      </ul>
+    </section>
+
+    <section class="downloads">
+      <h2>Dilekçeler ve PDF Dosyaları</h2>
+      <a href="dilekce.pdf" download>Dilekçe İndir (PDF)</a>
+      <a href="bilgilendirme.zip" download>Bilgilendirme Dosyası (ZIP)</a>
+    </section>
+
+    <section class="video">
+      <h2>Video ve Belgesel Önerileri</h2>
+      <a href="https://www.youtube.com/watch?v=videoID" target="_blank">📺 Filistin Belgeseli İzle</a>
+    </section>
+
+    <section>
+      <h2>Sosyal Medyada Paylaş</h2>
+      <div class="social-icons">
+        <a href="https://twitter.com/intent/tweet?text=Filistin’e+destek+ol!+%23FreePalestine" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter">
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ornek.com" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Filistin’e+destek+ol!+https://ornek.com" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Görseller</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Filistin Bayrağı" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+    </section>
+
   </div>
 
   <footer>
-    &copy; 2025 SesizKalmaTurkiye | Tüm hakları saklıdır.
+    &copy; 2025 Filistin Destek Platformu. Tüm hakları saklıdır.
   </footer>
 
 </body>
