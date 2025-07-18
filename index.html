@@ -1,249 +1,115 @@
-<!DOCTYPE html><html lang="tr">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filistin'e Destek | Karadeniz Market</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filistin İçin Sessiz Kalma</title>
+  <meta name="description" content="Boykot et, bilinçlen, destek ol. Filistin halkına destek için birleşelim.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --green: #006400;
-      --dark: #111;
-      --light: #f4f4f4;
-      --accent: #ff3b3b;
-    }* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--light);
-  color: var(--dark);
-  transition: 0.3s ease;
-}
-
-body.dark-mode {
-  background-color: #111;
-  color: #eee;
-}
-
-header {
-  background: var(--green);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-header img {
-  max-height: 90px;
-  margin-bottom: 10px;
-}
-
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #fff;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--green);
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-h2 {
-  margin-bottom: 20px;
-  color: var(--green);
-  border-bottom: 2px solid var(--green);
-  display: inline-block;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-body.dark-mode .card {
-  background: #222;
-  color: white;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.downloads a, .video a, .btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background: var(--green);
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 10px 10px 0 0;
-  transition: background 0.3s;
-}
-
-.downloads a:hover, .video a:hover, .btn:hover {
-  background: #004d00;
-}
-
-.social-icons img {
-  width: 32px;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background: var(--green);
-  color: white;
-}
-
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 30px;
-  margin-top: 40px;
-}
-
-.toggle-mode {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
-
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:sans-serif; background:#f0f0f5; color:#222; }
+    header { background:#b40000; color:white; padding:40px 20px; text-align:center; }
+    nav { background:#900; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 10px; font-weight:bold; text-decoration:none; }
+    section { max-width:1000px; margin:30px auto; background:white; padding:25px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);}
+    h2 { color:#b40000; border-bottom:2px solid #b40000; padding-bottom:5px; margin-bottom:20px; }
+    .brand-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:20px;}
+    .brand-card { text-align:center; padding:10px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1); background:#fafafa; transition:transform .3s;}
+    .brand-card:hover { transform:scale(1.05); }
+    .brand-card img { max-width:100px; margin-bottom:10px; }
+    .button { display:inline-block; background:#b40000; color:white; padding:10px 18px; border-radius:6px; text-decoration:none; margin:8px 6px 0 0; }
+    .video-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px;}
+    .video-container iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+    .market img { width:100%; border-radius:8px; margin-top:10px;}
+    .social a { color:#b40000; font-size:24px; margin:0 8px; text-decoration:none; }
+    footer { background:#111; color:white; text-align:center; padding:20px; margin-top:40px; }
   </style>
 </head>
 <body>
-  <header>
-    <button class="toggle-mode" onclick="toggleMode()">🌙 / ☀️</button>
-    <img src="https://i.ibb.co/hmNq5d5/karadeniz-market-logo.jpg" alt="Karadeniz Market">
-    <h1>Filistin'e Destek</h1>
-    <p>Karadeniz Market - Adalet, Dayanışma, Bilinç</p>
-  </header>  <div class="hero">
-    <h1>Boykotla Diren, Bilinçle Destek Ol</h1>
-    <p>Filistin halkının haklı mücadelesine katkı sunmak için bilinçlen, paylaş ve destek ol.</p>
-  </div>  <div class="container">
-    <h2>Neden Boykot?</h2>
-    <p>İsrail'e doğrudan veya dolaylı destek veren bazı uluslararası şirketler, Filistin'de yaşanan insan hakları ihlallerine ortak olmaktadır. Bu nedenle, bireysel bilinçlenme ve toplumsal baskı oluşturma adına bu markaların boykot edilmesi çağrısı yapılmaktadır.</p><h2>Boykot Edilen Markalar</h2>
-<div class="card-grid">
-  <div class="card">
-    <img src="https://i.ibb.co/QKzNHhK/mcdonalds.jpg" alt="McDonalds">
-    <strong>McDonald's</strong>
-    <p>İsrail askerlerine bedava yemek desteği sağladı.</p>
+
+<header>
+  <h1>Filistin İçin Sessiz Kalma</h1>
+  <p>Boykot Et • Bilgilendir • Paylaş • Destek Ol</p>
+</header>
+
+<nav>
+  <a href="#markalar">Markalar</a>
+  <a href="#alternatifler">Alternatifler</a>
+  <a href="#karadeniz">Karadeniz Market</a>
+  <a href="#pdf">PDF</a>
+  <a href="#video">Video</a>
+</nav>
+
+<section id="markalar">
+  <h2>Boykot Edilecek Markalar</h2>
+  <div class="brand-grid">
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/HP_logo_630x630.png" alt="HP Logo">
+      <p>HP</p>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo-2023.svg" alt="Intel Logo">
+      <p>Intel</p>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Puma-logo-%28text%29.svg" alt="Puma Logo">
+      <p>Puma</p>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/SodaStream_logo.png" alt="SodaStream Logo">
+      <p>SodaStream</p>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb Logo">
+      <p>Airbnb</p>
+    </div>
   </div>
-  <div class="card">
-    <img src="https://i.ibb.co/YcJfb9p/starbucks.jpg" alt="Starbucks">
-    <strong>Starbucks</strong>
-    <p>Filistin yanlısı çalışanlarını işten çıkardı.</p>
+</section>
+
+<section id="alternatifler">
+  <h2>Alternatif Ürünler</h2>
+  <ul>
+    <li><strong>HP yerine:</strong> Lenovo, Casper</li>
+    <li><strong>Intel yerine:</strong> AMD</li>
+    <li><strong>Puma yerine:</strong> Lescon, Hummel</li>
+    <li><strong>SodaStream yerine:</strong> Manuel soda makineleri</li>
+    <li><strong>Zincir marketler yerine:</strong> Kooperatif Market ve <strong>Karadeniz Market</strong></li>
+  </ul>
+</section>
+
+<section id="karadeniz">
+  <h2>Karadeniz Market</h2>
+  <div class="market">
+    <p><strong>Karadeniz Market</strong>, yerli üretimi destekleyen bağımsız bir market zinciridir. Filistin'e destek isteyenlere güçlü alternatif.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/T%C3%BCrk_Bayra%C4%9F%C4%B1.svg" alt="Karadeniz Market">
+    <p>Merkez: Amasra, 1988’den beri hizmet veriyor. 1</p>
   </div>
-  <div class="card">
-    <img src="https://i.ibb.co/JQmbh7C/cocacola.jpg" alt="Coca-Cola">
-    <strong>Coca-Cola</strong>
-    <p>İsrail yerleşimlerinde üretim faaliyetleri yürütüyor.</p>
+</section>
+
+<section id="pdf">
+  <h2>PDF İndirilebilir Dosyalar</h2>
+  <a class="button" href="#">Boykot Rehberi</a>
+  <a class="button" href="#">Dilekçe Örneği</a>
+</section>
+
+<section id="video">
+  <h2>Bilgilendirici Video</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/aAE8u2rE4OA" title="Bilgi Belgesel" frameborder="0" allowfullscreen></iframe>
   </div>
-</div>
+</section>
 
-<h2>Alternatif Markalar</h2>
-<table>
-  <tr><th>Boykot Markası</th><th>Alternatif Yerli Marka</th></tr>
-  <tr><td>Starbucks</td><td>Kahve Dünyası, Espresso Lab</td></tr>
-  <tr><td>McDonald's</td><td>Tavuk Dünyası, Burger@</td></tr>
-  <tr><td>Coca-Cola</td><td>Cola Turka, Kristal Kola</td></tr>
-</table>
+<section class="social">
+  <h2>Bizi Paylaş</h2>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+</section>
 
-<h2>İndirilebilir Belgeler</h2>
-<div class="downloads">
-  <a href="dilekce.pdf" download>Dilekçe PDF</a>
-  <a href="bilgilendirme.zip" download>Boykot Bilgilendirme ZIP</a>
-</div>
+<footer>
+  © 2025 Filistin İçin Sessiz Kalma | Tüm Hakları Saklıdır
+</footer>
 
-<h2>Video & Belgesel</h2>
-<div class="video">
-  <a href="https://www.youtube.com/watch?v=78bxED9WIoE" target="_blank">📽️ Gazze: Bir Halkın Direnişi</a>
-</div>
-
-<h2>Sosyal Medyada Paylaş</h2>
-<div class="social-icons">
-  <a href="https://twitter.com/intent/tweet?text=Filistin+İçin+Boykot" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter">
-  </a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://ornek.com" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-  </a>
-  <a href="https://api.whatsapp.com/send?text=Filistin+İçin+Boykot+https://ornek.com" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-</div>
-
-<h2>Görsel Galeri</h2>
-<div class="gallery">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Filistin Bayrağı">
-  <img src="https://i.ibb.co/Sxmnc0F/free-palestine.jpg" alt="Free Palestine">
-  <img src="https://i.ibb.co/bL4sWxz/palestine-child.jpg" alt="Gazze'de Çocuklar">
-  <img src="https://i.ibb.co/VpRMWLN/market-sembol.jpg" alt="Market Desteği">
-  <img src="https://i.ibb.co/LCr3Znm/palestine-protest.jpg" alt="Protesto">
-</div>
-
-  </div>  <footer>
-    &copy; 2025 Karadeniz Market | Filistin'e destek için birlik zamanı.
-  </footer>  <script>
-    function toggleMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script></body>
+</body>
 </html>
